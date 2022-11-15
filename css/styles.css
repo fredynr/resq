@@ -1,0 +1,225 @@
+:root{
+    --azul-primary:#17A3EB;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.flex-around{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+header{
+    z-index: 1000;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgb(0 0 0 / 50%);
+    font-weight: 300;
+}
+header > figure{
+    background-color: #fff;
+    padding: 5px;
+}
+header > figure img{
+    height: 36px;
+}
+.menu{
+    min-width: 50%;
+}
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#slide{
+    max-width: 100vw;
+    position: relative;
+}
+#slide img{
+    max-width: 100%;
+    height: 100vh;
+}
+#slide h1{
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-20%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    line-height: 3.7rem;
+}
+#mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    position: absolute;
+}
+
+/* productos */
+#section1 > article >img{
+    width: 50px;
+}
+#section1 > article > div{
+    margin: 2rem 0 2rem 2rem;
+}
+#section1 > article > div > h1{
+    color: var(--azul-primary);
+    font-weight: 400;
+}
+#section1 > article > div > p{
+    max-width: 20rem;
+    font-size: .9rem;
+}
+
+/* section2 */
+#section2{
+    background-image: url("../images/bg1.jpg");
+    width: 100%;
+}
+#section2 > article{
+    color: #fff;
+    max-width: 50%;
+}
+#section2 > img{
+    height: 570px;
+    margin: 3rem 0;
+}
+#section2 > article > h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+#section2 > article > p{
+    line-height: 36px;
+    margin-bottom: 2rem;
+}
+#section2 > article > a{
+    font-family: 'Bebas Neue', cursive;
+    background-color: var(--azul-primary);
+    padding: 1rem;
+    box-shadow: 1px 1px;
+    letter-spacing: 1px;
+    float: right;
+}
+
+/* oferta */
+#oferta{
+    margin: 1rem 0;
+    padding: 5px;
+    background-image: url("../images/bg2.jpg");
+    color: #fff;
+}
+#oferta > span{
+    border-top: 3px solid var(--azul-primary);
+    border-bottom: 3px solid var(--azul-primary);
+    padding: 1rem;
+}
+#oferta > figure > img{
+    height: 100px;
+    margin-right: 10px;
+}
+#oferta > figure > figcaption{
+    max-width: 13rem;
+}
+
+/* clientes */
+#section3{
+    margin: 4rem 0;
+}
+#section3 > h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.2rem;
+    color: #343434;
+    text-align: center;
+}
+#section3 > h2{
+    font-weight: 400;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+#logos > img{
+    width: 200px;
+}
+
+/* contactenos */
+#section4{
+    margin: 2rem 0;
+    padding: 3rem 0;
+    background-image: url(../images/bg3.jpg);
+    background-position: center;
+    color: #fff;
+}
+#section4 h1{
+    font-size: 4rem;
+}
+#section4 form{
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+}
+#section4 form > input[type=text], #section4 form > input[type=email], #section4 form > textarea{
+    font-family: 'Roboto', sans-serif;
+    background: rgb(255 255 255 / 35%);
+    border: 1px solid hsl(0deg 0% 50% / 71%);
+    margin-top: 0.4rem;
+    border-radius: 5px;
+    color: #fff;
+    padding-left: 8px;
+    font-size: 1rem;
+    font-weight: 300;
+    text-shadow: 1px 1px #000;
+}
+#section4 form > input[type=text], #section4 form > input[type=email]{
+    height: 2rem;
+}
+#section4 form > input[type=text]::placeholder, #section4 form > input[type=email]::placeholder, #section4 form > textarea::placeholder{
+    color: #fff;
+    padding-left: 8px;
+}
+
+#section4 p{
+    font-size: 1.4rem;
+    max-width: 34rem;
+}
+#section4 form > button{
+    background: var(--azul-primary);
+    border: none;
+    margin-top: 1rem;
+    padding: 10px;
+    color: #fff;
+    box-shadow: 1px 1px;
+}
+
+footer{
+    background: var(--azul-primary);
+    color: #fff;
+}
+footer > div > ul{
+    font-weight: 300;
+    padding: 1rem;
+    line-height: 2rem;
+}
